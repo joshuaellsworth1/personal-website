@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
 class App extends React.Component {
@@ -11,9 +12,9 @@ class App extends React.Component {
     this.state = {
       title: "Josh Ellsworth",
       headerLinks: [
-        {title: "Home", path: '/'},
-        {title: "About", path: '/about'},
-        {title: "Contact", path: '/contact'}
+        { title: "Home", path: '/' },
+        { title: "About", path: '/about' },
+        { title: "Contact", path: '/contact' }
       ],
       home: {
         title: 'Simple. Clean. Fun.',
@@ -30,17 +31,27 @@ class App extends React.Component {
   }
 
   render() {
-  return (
-    <Router>
-      <Container className="p-0" fluid={true}>
-        <p>Hello from React</p>
-      </Container>
+    return (
+      <Router>
+        <Container className="p-0" fluid={true}>
 
-      <Navbar>
-        <Navbar.Brand>Josh Ellsworth</Navbar.Brand>
-      </Navbar>
+          <Navbar className="border-bottom">
+            <Navbar.Brand>Josh Ellsworth</Navbar.Brand>
 
-    </Router>
+            <Navbar.Toggle aria-controls='navbar-toggle'/>
+            <Navbar.Collapse id="navbar-toggle">
+              <Nav className="ml-auto"></Nav>
+              <Nav>
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </Nav>
+
+            </Navbar.Collapse>
+          </Navbar>
+
+        </Container>
+      </Router>
     );
   }
 }
