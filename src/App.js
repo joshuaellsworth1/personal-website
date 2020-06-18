@@ -1,9 +1,10 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link } from "react-router"
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 
-class App extends React.Component() {
+class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -31,9 +32,13 @@ class App extends React.Component() {
   render() {
   return (
     <Router>
-      <Container fluid={true}>
-        
+      <Container className="p-0" fluid={true}>
+        <p>Hello from React</p>
       </Container>
+
+      <Navbar>
+        <Navbar.Brand>Josh Ellsworth</Navbar.Brand>
+      </Navbar>
 
     </Router>
     );
