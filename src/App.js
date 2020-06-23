@@ -18,7 +18,7 @@ class App extends React.Component {
       ],
       home: {
         title: 'Simple. Clean. Fun.',
-        subTitle: 'Apps that challenge and change',
+        subTitle: 'Apps that challenge and change us',
         text: 'checkout projects below'
       },
       about: {
@@ -35,20 +35,20 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
 
-          <Navbar className="border-bottom">
+          <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Josh Ellsworth</Navbar.Brand>
 
-            <Navbar.Toggle aria-controls='navbar-toggle'/>
+            <Navbar.Toggle className="border-0" aria-controls='navbar-toggle'/>
             <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto"></Nav>
-              <Nav>
+              <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
-
             </Navbar.Collapse>
           </Navbar>
+
+
 
         </Container>
       </Router>
