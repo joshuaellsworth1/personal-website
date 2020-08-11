@@ -1,10 +1,34 @@
 import React from 'react';
 
-function ContactPage(props) {
+import Hero from '../components/Hero';
 
-    return (
-        <p>ContactPage Works!</p>
-    );
+import Content from '../components/Content';
+
+
+class ContactPage extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: "",
+            email: "",
+            message: "",
+            disabled: false,
+            emailSent: null,
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Hero title={this.props.title} />
+
+                <Content>
+                    Hello
+                </Content>
+            </div>
+        );
+    }
 }
 
 export default ContactPage;
