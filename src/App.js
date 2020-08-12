@@ -10,6 +10,17 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
+
+function App() {
+  return (
+    <div className="page-container">
+      <div className="content-wrap">
+
+      </div>
+    </div>
+  )
+}
+
 class App extends React.Component {
 
   constructor(props) {
@@ -23,8 +34,8 @@ class App extends React.Component {
       ],
       home: {
         title: 'Simple. Clean. Fun.',
-        subTitle: 'Apps that challenge and change us',
-        text: 'checkout projects below'
+        subTitle: 'Apps that challenge',
+        text: 'Checkout Projects Below!'
       },
       about: {
         title: 'About Me',
@@ -57,7 +68,9 @@ class App extends React.Component {
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
 
-          <Footer />
+          <div>
+            <Footer />
+          </div>
 
         </Container>
       </Router>
