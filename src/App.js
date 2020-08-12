@@ -5,21 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-
-
-function App() {
-  return (
-    <div className="page-container">
-      <div className="content-wrap">
-
-      </div>
-    </div>
-  )
-}
 
 class App extends React.Component {
 
@@ -34,8 +22,8 @@ class App extends React.Component {
       ],
       home: {
         title: 'Simple. Clean. Fun.',
-        subTitle: 'Apps that challenge',
-        text: 'Checkout Projects Below!'
+        subTitle: 'Apps that challenge and change us',
+        text: 'Checkout Projects Below'
       },
       about: {
         title: 'About Me',
@@ -67,10 +55,6 @@ class App extends React.Component {
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
-
-          <div>
-            <Footer />
-          </div>
 
         </Container>
       </Router>
