@@ -1,6 +1,6 @@
 {
-  "homepage": "http://joshuaellsworth1.github.io/personal-website",
-  "name": "personal-website",
+  "homepage": ".",
+  "name": "myApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

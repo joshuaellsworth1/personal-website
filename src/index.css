@@ -14,7 +14,7 @@ code {
 }
 
 .g-card {
-  margin: 20px;
+  display: fixed;
 }
 
 .g-card-image {
@@ -22,21 +22,31 @@ code {
   width: 250px;
   height: 250px;
   box-shadow: 0px 0px 3px 1px #ccc;
+  margin: auto;
+  padding: auto;
+  display: fixed;
+}
+
+.g-card-image:hover {
+  color: gold;
+  background-color: gold;
 }
 
 .g-card-info {
   margin-top: 10px;
   min-height: 100px;
+  margin: auto;
 }
 
 .g-card-title {
   font-size: 24px;
-  margin: 0px;
+  margin: auto;
 }
+
 
 .g-card-sub-title {
   font-size: 16px;
-  margin: 0px;
+  margin: auto;
 }
 
 .success-msg {

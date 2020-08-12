@@ -7,10 +7,13 @@ function CardInfo (props) {
 
     return (
         <animated.div className ="" style={style}>
+            <br></br>
+            <a href={props.link} target="_blank" rel="noopener noreferrer">Third Wheel
+            </a>
+
             <p>{props.title}</p>
             <p>{props.subTitle}</p>
-            <a href={props.link} target="_blank" rel="noopener noreferrer">view
-            </a>
+            
         </animated.div>
     );
 }

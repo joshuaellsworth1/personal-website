@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 
 import google from '../assets/images/google.png';
-import youtube from '../assets/images/youtube.png';
+import linkedin from '../assets/images/linkedin.png';
 import github from '../assets/images/github.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -16,7 +16,7 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'google',
+                    title: '',
                     subTitle: "A search engine",
                     imgSrc: google,
                     link: 'https://google.com',
@@ -24,10 +24,10 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 1,
-                    title: 'Josh Ellsworth',
-                    subTitle: "youtube",
-                    imgSrc: youtube,
-                    link: 'https://youtube.com',
+                    title: '',
+                    subTitle: "Find a group, based on interest",
+                    imgSrc: linkedin,
+                    link: 'https://thirdwheel.herokuapp.com/',
                     selected: false
                 },
                 {
