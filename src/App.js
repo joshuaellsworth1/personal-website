@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -21,9 +21,9 @@ class App extends React.Component {
         { title: "Contact", path: '/contact' }
       ],
       home: {
-        title: 'Simple. Clean. Fun.',
-        subTitle: 'Apps that challenge and change us',
-        text: 'My Recent Work'
+        title: 'Josh Ellsworth',
+        subTitle: 'Front End Developer',
+        text: 'Click on the icons to see projects'
       },
       about: {
         title: 'About Me',
@@ -40,8 +40,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
 
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand><Link className="nav-link" to="/*">Josh Ellsworth</Link></Navbar.Brand>
-
+            <Navbar.Brand><Link className="nav-link" to="/">Back to Home</Link></Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls='navbar-toggle' />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -51,11 +50,11 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
-          <Route path="/*" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
-          <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
-
+          <Switch>
+            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+            <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
+            <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
+          </Switch>
         </Container>
       </Router>
     );

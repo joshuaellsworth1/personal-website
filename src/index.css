@@ -25,11 +25,15 @@ code {
   margin: auto;
   padding: auto;
   display: fixed;
+  transition: .5s ease;
 }
 
 .g-card-image:hover {
   color: gold;
   background-color: #85DCBE;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
 }
 
 .g-card-info {
