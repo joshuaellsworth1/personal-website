@@ -17,9 +17,9 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: '',
-                    subTitle: "A search engine",
+                    subTitle: "Friendly Fridge",
                     imgSrc: google,
-                    link: 'https://google.com',
+                    link: 'https://glacial-brushlands-77323.herokuapp.com/',
                     selected: false
                 },
                 {
