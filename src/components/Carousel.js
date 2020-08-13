@@ -16,7 +16,7 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: '',
+                    title: 'Friendly Fridge',
                     subTitle: "Friendly Fridge",
                     imgSrc: google,
                     link: 'https://glacial-brushlands-77323.herokuapp.com/',
