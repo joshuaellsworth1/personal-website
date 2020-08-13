@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 
 import google from '../assets/images/google.png';
-import linkedin from '../assets/images/linkedin.png';
+import tricycle from '../assets/images/tricycle.png';
 import github from '../assets/images/github.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -17,16 +17,16 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Friendly Fridge',
-                    subTitle: "Friendly Fridge",
+                    subTitle: "Never let your food spoil again",
                     imgSrc: google,
                     link: 'https://glacial-brushlands-77323.herokuapp.com/',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: '',
+                    title: 'Third Wheel',
                     subTitle: "Find a group, based on interest",
-                    imgSrc: linkedin,
+                    imgSrc: tricycle,
                     link: 'https://thirdwheel.herokuapp.com/',
                     selected: false
                 },

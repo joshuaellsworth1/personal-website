@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
+import Button from 'react-bootstrap/Button';
 
 function CardInfo (props) {
 
@@ -8,8 +9,13 @@ function CardInfo (props) {
     return (
         <animated.div className ="" style={style}>
             <br></br>
-            <a href={props.link} target="_blank" rel="noopener noreferrer">Third Wheel
+
+            <Button style={{backgroundColor: "#E27D60"}}>
+            <a href={props.link} target="_blank" rel="noopener noreferrer">View
             </a>
+            </Button>
+            <br></br>
+            <br></br>
 
             <p>{props.title}</p>
             <p>{props.subTitle}</p>
